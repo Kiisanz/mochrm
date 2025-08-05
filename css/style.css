@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
+  z-index: 999;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 130px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background: url('../assets/texture.jpg') center center / cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #1db954;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #148f3f;
+}
+
+/* SECTIONS */
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about p, .tracks ul {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.track-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.track-list li {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-links a {
+  background: #1db954;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  background: white;
+  color: #191414;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #1db954;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #148f3f;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d0d0d;
+  font-size: 0.9em;
+}
